@@ -96,3 +96,23 @@ footer {
   padding: 40px;
   flex-grow: 1;
 }
+
+.button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
