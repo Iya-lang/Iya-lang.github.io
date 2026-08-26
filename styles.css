@@ -62,7 +62,7 @@ body {
 }
 
 .heading-description {
-  color: #a5acb1;
+  color:  #D3D3D3;
 }
 
 .left-navigators {
@@ -72,6 +72,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  padding-left: 10px;
   margin-top: 60px;
   margin-left: 10px;
   margin-right: 10px;
@@ -85,6 +86,20 @@ body {
   color: white;
   display: block;
   transition: 0.2s;
+}
+
+.left-navigators a:hover {
+  background-color: #D3D3D3;
+  color: black;
+}
+
+.download-links p {
+  color: white;
+}
+
+.download-links a {
+  text-decoration: underline;
+  color: white; 
 }
 
 footer {
