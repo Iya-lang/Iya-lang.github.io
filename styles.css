@@ -95,6 +95,7 @@ body {
 
 .download-links p {
   color: white;
+  text-decoration: none !important;
 }
 
 .download-links a {
