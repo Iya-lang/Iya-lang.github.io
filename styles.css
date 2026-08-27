@@ -98,7 +98,7 @@ body {
   text-decoration: none;
 }
 
-.download-links li {
+.download-links a {
   color: white;
   text-decoration: underline;
 }
