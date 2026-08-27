@@ -95,12 +95,12 @@ body {
 
 .download-links p {
   color: white;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
-.download-links a {
+.download-links li {
+  color: white;
   text-decoration: underline;
-  color: white; 
 }
 
 footer {
