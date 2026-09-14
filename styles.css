@@ -1,21 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #464646;
-  color: white;
+  background-color: #fafafa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .menubar {
   display: flex;
-  align-items: center;
-  max-width: 100%;
-  max-height: 40px;
-  margin: 0px;
-  padding: 0px;
-  height: auto;
-  overflow: hidden;
-  background-color: #545b73;
-  border-radius: 10px;
+  background-color: rgb(40, 40, 96);
 }
 
 .menubar ul {
@@ -29,11 +24,13 @@ body {
 .menubar ul li a {
   font-family: Arial;
   font-weight: bold;
-  display: block;
-  text-align: center;
   text-decoration: none;
   color: white;
   padding: 14px 16px;
+}
+
+.menubar a:hover {
+  color: orange;
 }
 
 .menubar ul li a:hover {
@@ -41,13 +38,19 @@ body {
 }
 
 #linktogithub {
+  font-size: 15pt;
   color: orange;
 }
 
+#linktogithub:hover {
+  color: orangered;
+}
+
+
 #logo {
-  max-width: 40px;
-  max-height: 40px;
-  object-fit: contain;
+  padding-left: 10px;
+  max-width: 200px;
+  max-height: 100px;
 }
 
 #menubuttons-right {
@@ -55,60 +58,50 @@ body {
 }
 
 .headings {
-  margin-top: 50px;
-  background: rgba(255, 255, 255, 0.1);
   font-size: 25px;
   text-align: center;
 }
 
 .heading-description {
-  color:  #D3D3D3;
-}
-
-.left-navigators {
-  width: 240px;
-  height: 100vh;
-  background-color: gray;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-left: 10px;
-  margin-top: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 10px;
-}
-
-.left-navigators a {
-  padding: 15px 25px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  display: block;
-  transition: 0.2s;
-}
-
-.left-navigators a:hover {
-  background-color: #D3D3D3;
-  color: black;
+  color:  #7d7c7c;
 }
 
 .download-links p {
-  color: white;
+  color: cyan;
   text-decoration: none;
 }
 
 .download-links a {
-  color: white;
+  color: cyan;
   text-decoration: underline;
 }
 
-footer {
-  font-size: 14px;
+.bottom-menus ul li {
+  float: left;
+  list-style-type: none;
 }
 
+.bottom-menus ul li a {
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+}
+
+.bottom-menus a:hover {
+  color: orange;
+}
+
+.footer {
+  color: white;
+  background-color: rgb(40, 40, 96);
+  padding: 20px;
+}
+
+
 .main-content {
-  margin-left: 240px;
+  flex: 1;
   padding: 40px;
-  flex-grow: 1;
+  color: black;
 }
