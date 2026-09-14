@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,7 +46,7 @@ body {
 }
 
 #linktogithub {
-  font-size: 15pt;
+  font-size: 13pt;
   color: orange;
 }
 
@@ -103,5 +111,5 @@ body {
 .main-content {
   flex: 1;
   padding: 40px;
-  color: black;
+  color: var(--text-color);
 }
