@@ -4,11 +4,12 @@
   <head>
     <link rel="stylesheet" href="styles.css"/>
     <title>The Ciya Project - Home</title>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
     <header>
     <nav class="menubar">
-      <img id="logo" src="assets/branding.svg" alt="Ciya Project Logo"/>
+      <img id="logo" src="assets/greyscale-branding.svg" alt="Ciya Project Logo"/>
       <ul id="menubuttons-right">
         <li><a id="linktogithub" href="https://github.com/Ciya-VM/Ciya">Github</a></li>
         <li><a href="https://github.com/Iya-lang">Organization</a></li>
@@ -26,30 +27,43 @@
           <p>Fast, updated daily, beginner-friendly.</p>
           <p>The Programming language that is hoped to be speedy and collaborated on daily!</p>
         </div>
-      </div>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h2>Fast</h2>
+            <div class="content">
+              <p>Designed to be fast for everyone. Built on C.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Updated Daily</h2>
+            <div class="content">
+              <p>Updates are constant, only a few days have no contribution.</p>
+            </div>
+          </article>
+          <article class="card">
+            <h2>Beginner Friendly</h2>
+            <div class="content">
+              <p>We plan syntax to be easy as possible. e.g. <code>say</code> instead of <code>printf</code></p>
+            </div>
+          </article>
+        </div>
     </div>
 
-    <div class="cards">
-      <article class="card">
-        <h2>Fast</h2>
-        <div class="content">
-          <p>Designed to be fast for everyone. Built on C.</p>
-        </div>
-      </article>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".starter").classList.add("show");
+      });
+    </script>
 
-      <article class="card">
-        <h2>Updated Daily</h2>
-        <div class="content">
-          <p>Updates are constant, only a few days have no contribution.</p>
-        </div>
-      </article>
-      <article class="card">
-        <h2>Beginner Friendly</h2>
-        <div class="content">
-          <p>We plan syntax to be easy as possible. e.g. <code>say</code> instead of <code>printf</code></p>
-        </div>
-      </article>
+
+    <div class="support">
+      <h2>Support our project</h2>
+      <p>Your star will give us energy to write <strong>MORE</strong></p>
+      <a class="github-button" href="https://github.com/Iya-lang/Ciyac" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" aria-label="Star Iya-lang/Ciyac on GitHub">Star Ciyac</a>
     </div>
+
     <footer class="footer">
       <div class="bottom-menus">
         <ul>
