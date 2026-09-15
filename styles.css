@@ -1,24 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #121212;
-    --text-color: #f0f0f0;
-  }
-}
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: black;
+  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 .menubar {
   display: flex;
-  background-color: rgb(40, 40, 96);
+  background-image: linear-gradient(to left, #000000, rgb(40, 40, 96));
 }
 
 .menubar ul {
@@ -65,23 +57,49 @@ body {
   margin-left: auto;
 }
 
+.starter {
+  flex: 1;
+  padding: 40px;
+  color: white;
+  background-image: radial-gradient(circle, black 20%, rgb(40, 40, 96), cyan, rgb(40, 40, 96));
+}
+
 .headings {
   font-size: 25px;
   text-align: center;
 }
 
 .heading-description {
-  color:  #7d7c7c;
+  color:  white;
+  opacity: 50%;
 }
 
-.download-links p {
-  color: cyan;
-  text-decoration: none;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 230px);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-items: center;
+  padding: 50px;
 }
 
-.download-links a {
-  color: cyan;
-  text-decoration: underline;
+.card {
+  border: 1px solid #999;
+  border-radius: 3px;
+  display: grid;
+  grid-template-rows: max-content 100px 1fr;
+  background-image: linear-gradient(to top right, grey, black);
+}
+
+
+.card h2 {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.card .content {
+  padding: 0.5rem;
 }
 
 .bottom-menus ul li {
@@ -108,8 +126,3 @@ body {
 }
 
 
-.main-content {
-  flex: 1;
-  padding: 40px;
-  color: var(--text-color);
-}
